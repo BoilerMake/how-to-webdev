@@ -1,3 +1,7 @@
+.container {
+  max-width: 60em;
+}
+
 .brighten {
   color: white;
 }
@@ -101,9 +105,6 @@ section {
 
 .contact-input:nth-child(1) {
   margin-top: 0;
-}
-
-.contact-input:last-child {
   margin-bottom: 0;
 }
 
@@ -112,7 +113,9 @@ section {
 }
 
 .contact-submit {
-  padding: 25px;
+  margin-left: 25px;
+  padding: 15px;
+  width: 200px;
 }
 
 footer {
