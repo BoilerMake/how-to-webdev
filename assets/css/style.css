@@ -71,7 +71,7 @@
 }
 
 section {
-  padding: 50px;
+  padding: 50px 0;
   color: #fff;
 }
 
@@ -115,14 +115,29 @@ section {
   margin-bottom: 0;
 }
 
-.button-wrapper {
-  text-align: center;
-}
-
 .contact-submit {
   margin-left: 25px;
   padding: 15px;
   width: 200px;
+}
+
+@media (max-width: 480px) {
+  .contact-input {
+    margin: 25px 0;
+  }
+
+  .contact-input:nth-child(1) {
+    margin-top: 25px;
+  }
+
+  .contact-submit {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.button-wrapper {
+  text-align: center;
 }
 
 footer {
