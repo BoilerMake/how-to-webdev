@@ -83,19 +83,19 @@ section {
   font-family: 'Montserrat', sans-serif;
 }
 
-#about {
+.about-section {
   min-height: 400px;
 
   background-color: #6CD4FF;
 }
 
-#writing {
+.writing-section {
   min-height: 400px;
 
   background-color: #5D576B;
 }
 
-#contact {
+.contact-section {
   background-color: #FE938C;
 }
 
