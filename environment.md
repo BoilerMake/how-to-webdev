@@ -45,7 +45,7 @@ $ sudo npm install -g http-server bower
 ## Step 6 - Test it!
 
 We want to make sure everything works together now. Go ahead and run the following
-command in your Koding terminal.
+commands in your Koding terminal.
 
 ```bash
 $ cd how-to-webdev
