@@ -75,6 +75,7 @@ section {
 }
 
 .section-title {
+  margin-top: 0;
   padding-bottom: 50px;
 
   text-align: center;
