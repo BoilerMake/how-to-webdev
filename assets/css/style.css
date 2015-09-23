@@ -72,6 +72,7 @@
 
 section {
   padding: 50px;
+  color: #fff;
 }
 
 .section-title {
@@ -83,10 +84,15 @@ section {
   font-family: 'Montserrat', sans-serif;
 }
 
+.section-content {
+  font-size: 1.4em;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .about-section {
   min-height: 400px;
-
-  background-color: #6CD4FF;
+  background-color: #339DCA;
 }
 
 .writing-section {
