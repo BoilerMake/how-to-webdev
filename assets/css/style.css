@@ -72,6 +72,7 @@
 
 section {
   padding: 50px;
+  color: #fff;
 }
 
 .section-title {
@@ -83,10 +84,40 @@ section {
   font-family: 'Montserrat', sans-serif;
 }
 
-.about-section {
-  min-height: 400px;
+.section-content {
+  padding: 0 25px;
 
-  background-color: #6CD4FF;
+  font-size: 1.4em;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-content a {
+  color: #fff;
+}
+
+.section-content a:hover {
+  text-decoration: underline;
+}
+
+.post-preview {
+  margin: 50px 0;
+}
+
+.post-preview-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.post-preview:nth-child(1) {
+  margin-top: 0;
+}
+
+.post-preview:last-child {
+  margin-bottom: 0;
+}
+
+.about-section {
+  background-color: #339DCA;
 }
 
 .writing-section {
