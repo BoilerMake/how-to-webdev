@@ -37,7 +37,7 @@ the project. Specifically, we'll be installing `http-server` and `bower`. Run
 the following command in your Koding terminal to install these tools.
 
 ```bash
-$ npm install -g http-server bower
+$ sudo npm install -g http-server bower
 ```
 
 > You can read more about these tools in the [glossary](https://github.com/BoilerCamp/how-to-webdev/blob/master/glossary.md).
@@ -48,6 +48,7 @@ We want to make sure everything works together now. Go ahead and run the followi
 command in your Koding terminal.
 
 ```bash
+$ cd how-to-webdev
 $ http-server
 ```
 
