@@ -6,6 +6,12 @@
   color: white;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar {
   margin-bottom: 0;
   border: none;
@@ -118,6 +124,10 @@ section {
 
 .about-section {
   background-color: #339DCA;
+}
+
+.headshot {
+  width: 100%;
 }
 
 .writing-section {
