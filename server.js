@@ -19,7 +19,7 @@ var homeController = require('./controllers/home');
 var postController = require('./controllers/post');
 
 app.get('/', homeController.getHome);
-app.get('/:postTitle', postController.getPost);
+app.get('/:postURL', postController.getPost);
 
 var server = app.listen(app.get('port'), function () {
   console.log('the server is listening on port %s', app.get('port'));

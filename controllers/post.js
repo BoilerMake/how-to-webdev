@@ -1,9 +1,19 @@
 var Post = require('../models/Post');
 
 exports.getPost = function(req, res) {
-  var postTitle = req.params.postTitle;
+  var postURL = req.params.postURL;
 
-  res.render('post', {
-    title: postTitle
-  })
+  Post.findOne({url: postURL}, function(err, post) {
+    if (!post) {
+      return res.render('404');
+    }
+
+    if (!err) {
+      res.render('post', {
+        post: post
+      });
+    } else {
+      res.sendStatus(500);
+    }
+  });
 };

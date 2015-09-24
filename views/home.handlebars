@@ -63,7 +63,7 @@
         {{#each posts}}
           <div class='post-preview'>
             <h3 class='post-preview-title'>{{ title }}</h3>
-            <p>{{ body }}</p>
+            <p>{{{ ellipsize body }}}</p>
             <a href='/{{ url }}'>Read more &raquo;</a>
           </div>
         {{/each}}
