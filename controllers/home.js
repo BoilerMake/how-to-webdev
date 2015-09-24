@@ -1,3 +1,4 @@
+var ellipsize = require('ellipsize');
 var Post = require('../models/Post');
 
 exports.getHome = function(req, res) {
