@@ -4,6 +4,11 @@
   "description": "A mostly complete introduction into web development.",
   "main": "server.js",
   "scripts": {
+    "clean": "rimraf bower_components",
+    "seed": "node seed.js",
+    "prepare": "./node_modules/bower/bin/bower install --config.interactive=false",
+    "start": "npm run prepare && node server.js",
+    "deploy": "npm run seed && npm start",
     "docs:clean": "rimraf _book",
     "docs:build": "gitbook build -g BoilerCamp/how-to-webdev",
     "docs:watch": "gitbook serve",
@@ -24,6 +29,7 @@
   "homepage": "http://boilercamp.github.io/how-to-webdev/",
   "dependencies": {
     "body-parser": "^1.14.0",
+    "bower": "^1.5.3",
     "dotenv": "^1.2.0",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
