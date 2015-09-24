@@ -6,6 +6,24 @@
   color: white;
 }
 
+.wrapper-404 {
+  height: 100vh;
+}
+
+.title-404 {
+  position: absolute;
+}
+
+.img-404 {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(/assets/img/404.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .navbar {
   margin-bottom: 0;
   border: none;
@@ -128,6 +146,7 @@ section {
 
 .headshot {
   width: 100%;
+  border: 5px solid #fff;
 }
 
 @media (max-width: 480px) {

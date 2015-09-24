@@ -55,40 +55,18 @@
     </div>
   </section>
 
+
   <section class='writing-section'>
     <div class='container'>
       <h2 class='section-title'>My Writing</h2>
       <div class='section-content'>
-        <div class='post-preview'>
-          <h3 class='post-preview-title'>Cross-Dimensional Televisions</h3>
-          <p>
-            I find television to be excruciatingly boring. You see the same
-            stuff over and over again. That's why I decided to build a
-            television that has access to all channels across all dimensions.
-            Such a television literally...
-          </p>
-          <a href='/cross-dimensional-television'>Read more &raquo;</a>
-        </div>
-        <div class='post-preview'>
-          <h3 class='post-preview-title'>Concentrated Dark Matter</h3>
-          <p>
-            Concentrated Dark Matter was a fuel that I invented to travel
-            faster than anyone else in the universe. The Zigerions wanted
-            the secret to making this fuel badly, and constantly tried to 
-            trick my grandson and I...
-          </p>
-          <a href='/concentrated-dark-matter'>Read more &raquo;</a>
-        </div>
-        <div class='post-preview'>
-          <h3 class='post-preview-title'>Mega Tree seeds</h3>
-          <p>
-            Dimension 35-C has the perfect conditions for growing Mega Trees.
-            The seeds can be used to briefly make someone incredibly
-            intelligent. Unfortunately in order to get past intergalactic
-            customs, Morty had to hide...
-          </p>
-          <a href='/mega-tree-seeds'>Read more &raquo;</a>
-        </div>
+        {{#each posts}}
+          <div class='post-preview'>
+            <h3 class='post-preview-title'>{{ title }}</h3>
+            <p>{{{ ellipsize body }}}</p>
+            <a href='/{{ url }}'>Read more &raquo;</a>
+          </div>
+        {{/each}}
       </div>
     </div>
   </section>
