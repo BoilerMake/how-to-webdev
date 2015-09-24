@@ -25,7 +25,7 @@ quickly introduce the power of frameworks by hooking you up with some [Bootstrap
 We'll add a little client-side JavaScript, which will give us a chance to
 introduce [jQuery](https://jquery.com/). Once we have a pretty static site set
 up we'll the introduce the idea of a backend with Node.js running a webserver
-with [Express](http://expressjs.com/). This provides us with a nice segway into
+with [Express](http://expressjs.com/). This provides us with a nice hoverboard into
 server-side rendering and templating [Handlebars](http://handlebarsjs.com/). And
 finally with introduce the idea of a database utilizing MongoDB.
 
