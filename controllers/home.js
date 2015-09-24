@@ -1,4 +1,5 @@
 var ellipsize = require('ellipsize');
+var sendgrid  = require('sendgrid')(process.env.SENDGRID_API_KEY);
 var Post = require('../models/Post');
 
 exports.getHome = function(req, res) {
@@ -15,6 +16,11 @@ exports.getHome = function(req, res) {
       res.sendStatus(500);
     }
   });
+};
+
+exports.postContact = function(req, res) {
+  console.log(req.body);
+  res.redirect('/?success');
 };
 
 function wrappedEllipsize(body) {

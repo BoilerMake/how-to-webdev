@@ -24,6 +24,10 @@
   background-size: contain;
 }
 
+.alert {
+  text-align: center;
+}
+
 .navbar {
   margin-bottom: 0;
   border: none;
@@ -176,7 +180,7 @@ section {
 
 .contact-input {
   padding: 25px;
-  margin: 25px;
+  margin: 25px 0;
 }
 
 .contact-input:first-child {
@@ -185,9 +189,13 @@ section {
 }
 
 .contact-submit {
-  margin-left: 25px;
   padding: 15px;
   width: 200px;
+}
+
+.contact-notification {
+  display: none;
+  margin-bottom: 0;
 }
 
 @media (max-width: 480px) {
