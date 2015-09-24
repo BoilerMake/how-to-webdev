@@ -1,11 +1,10 @@
-BoilerCamp Glossary
-===========================
+# Glossary
 
 You're going to be learning a lot of content at an accelerated pace. Here is a
 glossary that you can reference if you hear or see a word and your unsure of
 what it means.
 
-### bower
+## bower
 
 Bower is a command-line tool for install client-side libraries. Dependancies
 are stored in a `bower.json` file.
@@ -24,7 +23,7 @@ $ bower install <library> --save
 $ bower install
 ```
 
-### http-server
+## http-server
 
 Http-server is a command-line tool for running a simple HTTP server. It will
 server all of the files and folders in the directory that it is run from.

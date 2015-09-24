@@ -40,7 +40,7 @@ the following command in your Koding terminal to install these tools.
 $ sudo npm install -g http-server bower
 ```
 
-> You can read more about these tools in the [glossary](http://boilercamp.github.io/how-to-webdev/docs/Glossary.html).
+> You can read more about these tools in the [glossary](../Glossary.md).
 
 ## Step 6 - Test it!
 
