@@ -128,6 +128,7 @@ section {
 
 .headshot {
   width: 100%;
+  border: 5px solid #fff;
 }
 
 @media (max-width: 480px) {
