@@ -6,6 +6,29 @@
   color: white;
 }
 
+.wrapper-404 {
+  height: 100vh;
+}
+
+.title-404 {
+  position: absolute;
+}
+
+.img-404 {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(/assets/img/404.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.alert {
+  text-align: center;
+}
+
+>>>>>>> dccc1e4... Add unfinished contact form. No sendgrid :(
 .navbar {
   margin-bottom: 0;
   border: none;
@@ -158,7 +181,7 @@ section {
 
 .contact-input {
   padding: 25px;
-  margin: 25px;
+  margin: 25px 0;
 }
 
 .contact-input:first-child {
@@ -167,9 +190,13 @@ section {
 }
 
 .contact-submit {
-  margin-left: 25px;
   padding: 15px;
   width: 200px;
+}
+
+.contact-notification {
+  display: none;
+  margin-bottom: 0;
 }
 
 @media (max-width: 480px) {

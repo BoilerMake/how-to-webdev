@@ -1,6 +1,13 @@
 $(function() {
   registerNavButtons();
+  contactSuccess();
 });
+
+function contactSuccess() {
+  if (window.location.search.substring(1) === 'success') {
+    $('.contact-notification').show();
+  }
+}
 
 function registerNavButtons() {
   var sections = ['about', 'writing', 'contact'];
