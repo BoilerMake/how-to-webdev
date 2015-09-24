@@ -200,3 +200,43 @@ footer {
 footer .fa-heart {
   color: #f77380;
 }
+
+.blog-post {
+  padding: 50px 0;
+  width: 90%;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.blog-post a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-title {
+  margin-bottom: 30px;
+
+  font-family: 'Montserrat';
+  font-size: 3em;
+  cursor: pointer;
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  -ms-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.blog-title:hover {
+  color: #339DCA;
+}
+
+.blog-body {
+  font-family: 'Open Sans';
+  font-size: 1.1em;
+  line-height: 2em;
+  color: #777;
+}
+
+.blog-body p {
+  margin-bottom: 20px;
+}
