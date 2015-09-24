@@ -2,7 +2,7 @@ var marked = require('marked');
 var Post = require('../models/Post');
 
 exports.getPost = function(req, res) {
-  var postTitle = req.params.postTitle;
+  var postURL = req.params.postURL;
 
   Post.findOne({url: postURL}, function(err, post) {
     if (!post) {
