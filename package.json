@@ -1,21 +1,27 @@
 {
-  "name": "boilercamp-app",
+  "name": "how-to-webdev",
   "version": "1.0.0",
-  "description": "BoilerCamp App ==============",
-  "main": "index.js",
+  "description": "A mostly complete introduction into web development.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:clean": "rimraf _book",
+    "docs:build": "gitbook build -g BoilerCamp/how-to-webdev",
+    "docs:watch": "gitbook serve",
+    "docs:publish": "npm run docs:clean && npm run docs:build && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && git add . && git commit -am 'update book' && git push git@github.com:BoilerCamp/how-to-webdev.git gh-pages --force"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BoilerCamp/app.git"
   },
-  "author": "",
-  "license": "ISC",
+  "authors": [
+    "Kirby Kohlmorgen <kirby@kkohlmorgen.com>",
+    "Roy Fu <royfu@purdue.edu>"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/BoilerCamp/app/issues"
   },
-  "homepage": "https://github.com/BoilerCamp/app#readme",
+  "homepage": "http://boilercamp.github.io/how-to-webdev/",
   "dependencies": {
     "body-parser": "^1.14.0",
     "dotenv": "^1.2.0",
@@ -24,5 +30,8 @@
     "marked": "^0.3.5",
     "mongoose": "^4.1.8",
     "sendgrid": "^1.9.2"
+  },
+  "devDependencies": {
+    "rimraf": "^2.4.3"
   }
 }
