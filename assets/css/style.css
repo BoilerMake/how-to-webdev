@@ -108,7 +108,7 @@ section {
   font-family: 'Montserrat', sans-serif;
 }
 
-.post-preview:nth-child(1) {
+.post-preview:first-child {
   margin-top: 0;
 }
 
@@ -160,7 +160,7 @@ section {
   margin: 25px;
 }
 
-.contact-input:nth-child(1) {
+.contact-input:first-child {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -176,7 +176,7 @@ section {
     margin: 25px 0;
   }
 
-  .contact-input:nth-child(1) {
+  .contact-input:first-child {
     margin-top: 25px;
   }
 
