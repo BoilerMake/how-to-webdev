@@ -6,12 +6,6 @@
   color: white;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .navbar {
   margin-bottom: 0;
   border: none;
@@ -126,8 +120,29 @@ section {
   background-color: #339DCA;
 }
 
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .headshot {
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .about-wrapper {
+    display: block;
+  }
+
+  .about-wrapper div:first-child {
+    text-align: center;
+  }
+
+  .headshot {
+    width: 50%;
+    margin-bottom: 25px;
+  }
 }
 
 .writing-section {
