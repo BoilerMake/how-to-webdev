@@ -1,5 +1,5 @@
-var Post = require('../models/Post');
 var ellipsize = require('ellipsize');
+var Post = require('../models/Post');
 
 exports.getHome = function(req, res) {
   Post.find({}, function(err, posts) {

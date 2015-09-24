@@ -1,3 +1,4 @@
+var marked = require('marked');
 var Post = require('../models/Post');
 
 exports.getPost = function(req, res) {
@@ -10,7 +11,10 @@ exports.getPost = function(req, res) {
 
     if (!err) {
       res.render('post', {
-        post: post
+        post: post,
+        helpers: {
+          marked: marked
+        }
       });
     } else {
       res.sendStatus(500);
