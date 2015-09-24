@@ -1,8 +1,14 @@
-<article class='blog-post'>
+<nav class='blog-nav'>
+  <a href='/'>
+    <i class="fa fa-flask"></i>
+    Rick Sanchez
+  </a>
+</nav>
+
+<article class="blog-post">
   <a href='/{{ post.url }}'>
     <h1 class='blog-title'>{{ post.title }}</h1>
   </a>
-
   <div class='blog-body'>
     {{{ marked post.body }}}
   </div>
