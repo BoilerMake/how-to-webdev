@@ -4,6 +4,7 @@
   "description": "A mostly complete introduction into web development.",
   "main": "server.js",
   "scripts": {
+    "seed": "node seed.js",
     "start": "node server.js"
   },
   "repository": {
@@ -21,9 +22,11 @@
   "homepage": "http://boilercamp.github.io/how-to-webdev/",
   "dependencies": {
     "bower": "^1.5.3",
+    "dotenv": "^1.2.0",
     "ellipsize": "0.0.2",
     "express": "^4.13.3",
-    "express-handlebars": "^2.0.1"
+    "express-handlebars": "^2.0.1",
+    "mongoose": "^4.1.8"
   },
   "devDependencies": {
     "rimraf": "^2.4.3"
