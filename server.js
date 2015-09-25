@@ -30,20 +30,24 @@ app.set('port', (process.env.PORT || 8080));
  * Tell express which view engine we're using, and tell handlebars where the
  * main layout (the part that is rendered for every page) is.
  */
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('views', 'src/views')
+app.engine('handlebars', exphbs({
+  layoutsDir: 'src/views/layouts/',
+  defaultLayout: 'main'
+}));
 app.set('view engine', 'handlebars');
 
 /*
  * Bind our static assets to public endpoints.
  */
-app.use('/assets',  express.static(__dirname + '/assets'));
+app.use('/assets',  express.static(__dirname + '/src/assets'));
 app.use('/vendor',  express.static(__dirname + '/bower_components'));
 
 /*
  * Import our home and post controllers.
  */
-var homeController = require('./controllers/home');
-var postController = require('./controllers/post');
+var homeController = require('./src/controllers/home');
+var postController = require('./src/controllers/post');
 
 /*
  * When a user makes a GET request to the root of our web app call the getHome

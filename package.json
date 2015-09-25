@@ -5,7 +5,11 @@
   "main": "server.js",
   "scripts": {
     "seed": "node seed.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "docs:clean": "rimraf _book",
+    "docs:build": "gitbook build -g BoilerCamp/how-to-webdev",
+    "docs:watch": "gitbook serve",
+    "docs:publish": "npm run docs:clean && npm run docs:build && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && git add . && git commit -am 'update book' && git push git@github.com:BoilerCamp/how-to-webdev.git gh-pages --force"
   },
   "repository": {
     "type": "git",
