@@ -57,16 +57,16 @@ serving. To do this we can open up our assigned Koding URL.
 
 First, go to your VM settings my clicking the elipsis to the right of your VM name.
 
-![test-it-1](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/images/test-it-1.png)
+![test-it-1](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/docs/assets/img/test-it-1.png)
 
 Next, find your assigned URL under the General tab.
 
-![test-it-2](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/images/test-it-2.png)
+![test-it-2](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/docs/assets/img/test-it-2.png)
 
 Finally, open a new tab in your browser to your assigned URL, but append `:8080`
 to the end of the URL. (We append 8080, because that's the port our server is 
 running on)
 
-![test-it-3](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/images/test-it-3.png)
+![test-it-3](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/docs/assets/img/test-it-3.png)
 
 ### You should now be ready to go for BoilerCamp! If you run into any issues contact [boilercamp@boilermake.org](mailto:boilercamp@boilermake.org).
