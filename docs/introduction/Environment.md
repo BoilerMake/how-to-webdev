@@ -32,7 +32,7 @@ $ git clone https://github.com/BoilerCamp/how-to-webdev.git
 
 ## Step 5 - Install tools
 
-We're almost done! We just need install some programs that we'll be using throughout
+We're almost done! We just need to install some programs that we'll be using throughout
 the project. Specifically, we'll be installing `http-server` and `bower`. Run
 the following command in your Koding terminal to install these tools.
 
@@ -40,7 +40,7 @@ the following command in your Koding terminal to install these tools.
 $ sudo npm install -g http-server bower
 ```
 
-> You can read more about these tools in the [glossary](../Glossary.md).
+> You can read more about these tools in the [glossary](../glossary.md).
 
 ## Step 6 - Test it!
 
@@ -55,18 +55,18 @@ $ http-server
 This will start a server on port `8080`. We now want to see what this server is
 serving. To do this we can open up our assigned Koding URL.
 
-First, go to your VM settings my clicking the elipsis to the right of your VM name.
+First, go to your VM settings by clicking the elipsis to the right of your VM name.
 
-![test-it-1](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/docs/assets/img/test-it-1.png)
+![test-it-1](/docs/assets/img/test-it-1.png)
 
 Next, find your assigned URL under the General tab.
 
-![test-it-2](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/docs/assets/img/test-it-2.png)
+![test-it-2](/docs/assets/img/test-it-2.png)
 
 Finally, open a new tab in your browser to your assigned URL, but append `:8080`
-to the end of the URL. (We append 8080, because that's the port our server is 
+to the end of the URL. (We append 8080, because that's the port our server is
 running on)
 
-![test-it-3](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/docs/assets/img/test-it-3.png)
+![test-it-3](/docs/assets/img/test-it-3.png)
 
 ### You should now be ready to go for BoilerCamp! If you run into any issues contact [boilercamp@boilermake.org](mailto:boilercamp@boilermake.org).
