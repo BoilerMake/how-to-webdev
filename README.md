@@ -12,6 +12,10 @@ will cover [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML),
 How to Webdev was first debuted September 2015 at [BoilerCamp](http://boilercamp.org/)
 at Purdue University.
 
+You can checkout all of the slides from the presentation(s) in both [PDF](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/docs/assets/slides/BoilerCamp.pdf)
+and [Keynote](https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/master/docs/assets/slides/BoilerCamp.key)
+formats.
+
 Written and developed by [Kirby Kohlmorgen](http://kirby.xyz/) & [Roy Fu](http://royfu.me/).
 
 ## The Goal
