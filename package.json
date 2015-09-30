@@ -1,0 +1,41 @@
+{
+  "name": "how-to-webdev",
+  "version": "1.0.0",
+  "description": "A mostly complete introduction into web development.",
+  "main": "server.js",
+  "scripts": {
+    "clean": "rimraf bower_components",
+    "seed": "node seed.js",
+    "prepare": "./node_modules/bower/bin/bower install --config.interactive=false",
+    "start": "npm run prepare && node server.js",
+    "deploy": "npm run seed && npm start",
+    "docs:clean": "rimraf _book",
+    "docs:build": "gitbook build -g BoilerCamp/how-to-webdev",
+    "docs:watch": "gitbook serve",
+    "docs:publish": "npm run docs:clean && npm run docs:build && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && git add . && git commit -am 'update book' && git push git@github.com:BoilerCamp/how-to-webdev.git gh-pages --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoilerCamp/how-to-webdev.git"
+  },
+  "authors": [
+    "Kirby Kohlmorgen <kirby@kkohlmorgen.com>",
+    "Roy Fu <royfu@purdue.edu>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BoilerCamp/app/issues"
+  },
+  "homepage": "http://boilercamp.github.io/how-to-webdev/",
+  "dependencies": {
+    "bower": "^1.5.3",
+    "dotenv": "^1.2.0",
+    "ellipsize": "0.0.2",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "mongoose": "^4.1.8"
+  },
+  "devDependencies": {
+    "rimraf": "^2.4.3"
+  }
+}

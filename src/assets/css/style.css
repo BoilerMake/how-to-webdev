@@ -1,0 +1,277 @@
+.container {
+  max-width: 60em;
+}
+
+.brighten {
+  color: white;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+
+  background-color: transparent;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.main-header {
+  height: 100vh;
+
+  background-image: url(/assets/img/hero.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.black {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-text {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  color: white;
+  text-align: center;
+}
+
+.header-title {
+  margin-top: 0;
+
+  font-size: 5em;
+}
+
+.header-subtitle {
+  font-size: 3.4em;
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 2em;
+  }
+
+  .header-subtitle {
+    font-size: 1em;
+  }
+}
+
+section {
+  padding: 100px 0;
+
+  color: #fff;
+}
+
+.section-title {
+  margin-top: 0;
+  padding-bottom: 50px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-content {
+  font-size: 1.4em;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-content a {
+  color: #fff;
+}
+
+.section-content a:hover {
+  text-decoration: underline;
+}
+
+.post-preview {
+  margin: 50px 0;
+}
+
+.post-preview-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.post-preview:first-child {
+  margin-top: 0;
+}
+
+.post-preview:last-child {
+  margin-bottom: 0;
+}
+
+#about-section {
+  min-height: 400px;
+  background-color: #339DCA;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot {
+  width: 100%;
+  border: 5px solid #fff;
+}
+
+@media (max-width: 480px) {
+  .about-wrapper {
+    display: block;
+  }
+
+  .about-wrapper div:first-child {
+    text-align: center;
+  }
+
+  .headshot {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+}
+
+#writing-section {
+  min-height: 400px;
+
+  background-color: #5D576B;
+}
+
+#contact-section {
+  background-color: #FE938C;
+}
+
+.contact-input {
+  padding: 25px;
+  margin: 25px 0;
+}
+
+.contact-input:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-submit {
+  padding: 15px;
+  width: 200px;
+}
+
+.contact-notification {
+  display: none;
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .contact-input {
+    margin: 25px 0;
+  }
+
+  .contact-input:first-child {
+    margin-top: 25px;
+  }
+
+  .contact-submit {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+footer {
+  padding: 2em;
+
+  text-align: center;
+  font-size: 1.2em;
+}
+
+footer .fa-heart {
+  color: #f77380;
+}
+
+.blog-nav {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.blog-nav a {
+  font-size: 1.7em;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #339DCA;
+}
+
+.blog-post {
+  padding: 50px 0;
+  width: 90%;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.blog-post a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-title {
+  margin-bottom: 30px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  cursor: pointer;
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  -ms-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.blog-title:hover {
+  color: #339DCA;
+}
+
+.blog-body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  line-height: 2em;
+  color: #777;
+}
+
+.blog-body p {
+  margin-bottom: 20px;
+}
+
+.wrapper-404 {
+  height: 100vh;
+}
+
+.title-404 {
+  position: absolute;
+}
+
+.img-404 {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(/assets/img/404.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

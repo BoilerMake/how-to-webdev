@@ -1,0 +1,850 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Node Walkthrough | How to Webdev</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../docs/mongodb-mvc/index.html" />
+    
+    
+    <link rel="prev" href="../../docs/node-express/what-is-expressjs.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="4.3" data-basepath="../.." data-revision="Wed Sep 30 2015 14:13:22 GMT-0400 (EDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Read Me
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="docs/introduction/index.html">
+            
+                
+                    <a href="../../docs/introduction/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Introduction
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="docs/introduction/environment.html">
+            
+                
+                    <a href="../../docs/introduction/environment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Environment
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="docs/introduction/getting-from-an-idea-to-a-product.html">
+            
+                
+                    <a href="../../docs/introduction/getting-from-an-idea-to-a-product.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Getting from an Idea to a Product
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="docs/introduction/how-internet-browsers-work.html">
+            
+                
+                    <a href="../../docs/introduction/how-internet-browsers-work.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        How Internet Browsers Work
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="docs/html-css/index.html">
+            
+                
+                    <a href="../../docs/html-css/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        HTML / CSS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="docs/html-css/what-are-html-and-css.html">
+            
+                
+                    <a href="../../docs/html-css/what-are-html-and-css.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        What are HTML and CSS?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="docs/html-css/what-is-bootstrap.html">
+            
+                
+                    <a href="../../docs/html-css/what-is-bootstrap.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        What is Bootstrap?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="docs/html-css/html-css-walkthrough.html">
+            
+                
+                    <a href="../../docs/html-css/html-css-walkthrough.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        HTML / CSS Walkthrough
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="docs/client-side-js/index.html">
+            
+                
+                    <a href="../../docs/client-side-js/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Client-Side JavaScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="docs/client-side-js/what-is-javascript.html">
+            
+                
+                    <a href="../../docs/client-side-js/what-is-javascript.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        What is JavaScript?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="docs/client-side-js/what-is-jquery.html">
+            
+                
+                    <a href="../../docs/client-side-js/what-is-jquery.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        What is jQuery?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="docs/client-side-js/javascript-walkthrough.html">
+            
+                
+                    <a href="../../docs/client-side-js/javascript-walkthrough.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        JavaScript Walkthrough
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="docs/node-express/index.html">
+            
+                
+                    <a href="../../docs/node-express/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Node.js / Express.js
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="docs/node-express/what-is-nodejs.html">
+            
+                
+                    <a href="../../docs/node-express/what-is-nodejs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        What is Node.js?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="docs/node-express/what-is-expressjs.html">
+            
+                
+                    <a href="../../docs/node-express/what-is-expressjs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        What is Express.js?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="docs/node-express/node-express-walkthrough.html">
+            
+                
+                    <a href="../../docs/node-express/node-express-walkthrough.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Node Walkthrough
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="docs/mongodb-mvc/index.html">
+            
+                
+                    <a href="../../docs/mongodb-mvc/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        MongoDB / MVC
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="docs/mongodb-mvc/what-is-mongodb.html">
+            
+                
+                    <a href="../../docs/mongodb-mvc/what-is-mongodb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        What is MongoDB?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="docs/mongodb-mvc/what-is-mvc.html">
+            
+                
+                    <a href="../../docs/mongodb-mvc/what-is-mvc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        What is MVC?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="docs/mongodb-mvc/mongodb-mvc-walkthrough.html">
+            
+                
+                    <a href="../../docs/mongodb-mvc/mongodb-mvc-walkthrough.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        MongoDB / MVC Walkthrough
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="docs/glossary.html">
+            
+                
+                    <a href="../../docs/glossary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Glossary
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >How to Webdev</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="node-js-express-js-walkthrough">Node.js / Express.js Walkthrough</h1>
+<p>Let&apos;s turn our static HTML, CSS, and client-side JavaScript website into a real
+web app with Node.js and Express.js!</p>
+<p>If you didn&apos;t finish the last section run:</p>
+<pre><code class="lang-bash">$ git checkout <span class="hljs-operator">-f</span> completed-client-side-js
+</code></pre>
+<h2 id="getting-started">Getting Started</h2>
+<p>Instead of using <code>http-server</code> to serve our static assets we&apos;re going to create
+our own server to serve our content to our users. Let&apos;s create a <code>server.js</code>
+file where the bulk of our server logic will live.</p>
+<pre><code class="lang-bash">$ touch server.js
+</code></pre>
+<p>We&apos;re going to need to install Express.js and some other Node modules. Run these
+commands to get them!</p>
+<pre><code class="lang-bash">$ npm init
+$ npm install express ellipsize express-handlebars --save
+</code></pre>
+<h2 id="creating-an-express-js-server">Creating an Express.js Server</h2>
+<p>Let&apos;s go ahead and fill out our entire <code>server.js</code> file. The code <a href="https://github.com/BoilerCamp/how-to-webdev/blob/85bd3ebbe45c22ede9ecaedf8b43ce23be007902/server.js" target="_blank">here</a> is very well commented and explains
+everything.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
+<span class="hljs-keyword">var</span> exphbs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express-handlebars&apos;</span>);
+<span class="hljs-keyword">var</span> ellipsize = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;ellipsize&apos;</span>);
+<span class="hljs-keyword">var</span> posts = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./posts.json&apos;</span>);
+
+
+<span class="hljs-keyword">var</span> app = express();
+app.set(<span class="hljs-string">&apos;port&apos;</span>, (process.env.PORT || <span class="hljs-number">8080</span>));
+
+app.engine(<span class="hljs-string">&apos;handlebars&apos;</span>, exphbs({defaultLayout: <span class="hljs-string">&apos;main&apos;</span>}));
+app.set(<span class="hljs-string">&apos;view engine&apos;</span>, <span class="hljs-string">&apos;handlebars&apos;</span>);
+
+app.use(<span class="hljs-string">&apos;/assets&apos;</span>,  express.static(__dirname + <span class="hljs-string">&apos;/assets&apos;</span>));
+app.use(<span class="hljs-string">&apos;/vendor&apos;</span>,  express.static(__dirname + <span class="hljs-string">&apos;/bower_components&apos;</span>));
+
+app.get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  res.render(<span class="hljs-string">&apos;home&apos;</span>, {
+    title: <span class="hljs-string">&apos;The Official Blog of Rich Sanchez&apos;</span>,
+    posts: posts,
+    helpers: {
+      ellipsize: wrappedEllipsize
+    }
+  });
+});
+
+app.get(<span class="hljs-string">&apos;/:postURL&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-keyword">var</span> postURL = req.params.postURL;
+  <span class="hljs-keyword">var</span> post = posts[postURL];
+
+  <span class="hljs-keyword">if</span> (post) {
+    res.render(<span class="hljs-string">&apos;post&apos;</span>, {
+      post: post
+    });
+  } <span class="hljs-keyword">else</span> {
+    res.render(<span class="hljs-string">&apos;404&apos;</span>);
+  }
+});
+
+<span class="hljs-keyword">var</span> server = app.listen(app.get(<span class="hljs-string">&apos;port&apos;</span>), <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;the server is listening on port %s&apos;</span>, app.get(<span class="hljs-string">&apos;port&apos;</span>));
+});
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">wrappedEllipsize</span>(<span class="hljs-params">body</span>) </span>{
+  <span class="hljs-keyword">var</span> maxChars = <span class="hljs-number">240</span>;
+  <span class="hljs-keyword">return</span> ellipsize(body, maxChars);
+}
+</code></pre>
+<h2 id="-storing-posts">&quot;Storing&quot; Posts</h2>
+<p>We&apos;re not quite ready to add a database to our backend, but we can &quot;store&quot; all
+of our posts in a <code>posts.json</code> file.</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;cross-dimensional-televisions&quot;</span>: {
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Cross-Dimensional Televisions&quot;</span>,
+    <span class="hljs-string">&quot;body&quot;</span>: <span class="hljs-string">&quot;&lt;p&gt;I find television to be excruciatingly boring. You see the same stuff over and over again. That&apos;s why I decided to build a television that has access to all channels across all dimensions. Such a television literally Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;h2&gt;Big Heading&lt;/h2&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;h3&gt;Sub Heading&lt;/h3&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&quot;</span>,
+    <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;cross-dimensional-televisions&quot;</span>
+  },
+  <span class="hljs-string">&quot;concentrated-dark-matter&quot;</span>: {
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Concentrated Dark Matter&quot;</span>,
+    <span class="hljs-string">&quot;body&quot;</span>: <span class="hljs-string">&quot;&lt;p&gt;Concentrated Dark Matter was a fuel that I invented to travel faster than anyone else in the universe. The Zigerions wanted the secret to making this fuel badly, and constantly tried to trick my grandson and I Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;h2&gt;Big Heading&lt;/h2&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;h3&gt;Sub Heading&lt;/h3&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&quot;</span>,
+    <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;concentrated-dark-matter&quot;</span>
+  },
+  <span class="hljs-string">&quot;mega-tree-seeds&quot;</span>: {
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Mega Tree Seeds&quot;</span>,
+    <span class="hljs-string">&quot;body&quot;</span>: <span class="hljs-string">&quot;&lt;p&gt;Dimension 35-C has the perfect conditions for growing Mega Trees. The seeds can be used to briefly make someone incredibly intelligent. Unfortunately in order to get past intergalactic customs, Morty had to hide Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;h2&gt;Big Heading&lt;/h2&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;h3&gt;Sub Heading&lt;/h3&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.&lt;/p&gt;&quot;</span>,
+    <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;mega-tree-seeds&quot;</span>
+  }
+}
+</code></pre>
+<blockquote>
+<p>These are Rick&apos;s posts. You can obviously use your own.</p>
+</blockquote>
+<h2 id="converting-html-to-handlebars">Converting HTML to Handlebars</h2>
+<p>All of our content is currently static HTML files. We can take advantage of the
+power of <em>templating</em> with Handlebars to change that.</p>
+<p>First make a folder called views with a subfolder called layouts:</p>
+<pre><code class="lang-bash">$ mkdir -p views/layouts
+</code></pre>
+<p>Then rename your <code>index.html</code> file and move it to <code>views/layouts/main.handlebars</code>:</p>
+<pre><code class="lang-bash">$ mv index.html views/layouts/main.handlebars
+</code></pre>
+<p>Make another copy of it in <code>views</code> with the name <code>home.handlebars</code>.</p>
+<pre><code class="lang-bash">$ cp views/layouts/main.handlebars views/home.handlebars
+</code></pre>
+<h3 id="making-a-main-handlebars">Making a main.handlebars</h3>
+<p>Remove everything inside the <code>&lt;body&gt;</code> tag and replace it with <code>{{{ body }}}</code>.
+Do the same for the <code>&lt;title&gt;</code>.</p>
+<p>It should look like this:</p>
+<pre><code class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&apos;en&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&apos;utf-8&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">http-equiv</span>=<span class="hljs-value">&apos;X-UA-Compatible&apos;</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">&apos;IE=edge&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&apos;viewport&apos;</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">&apos;width=device-width, initial-scale=1&apos;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&apos;stylesheet&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;/vendor/bootstrap/dist/css/bootstrap.min.css&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&apos;stylesheet&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;/vendor/font-awesome/css/font-awesome.min.css&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;https://fonts.googleapis.com/css?family=Montserrat:700,400&apos;</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&apos;stylesheet&apos;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;text/css&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&apos;stylesheet&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;/assets/css/style.css&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    {{{ body }}}
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&apos;/vendor/jquery/dist/jquery.min.js&apos;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&apos;/vendor/bootstrap/dist/js/bootstrap.min.js&apos;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&apos;/assets/js/main.js&apos;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<h3 id="making-a-home-handlebars">Making a home.handlebars</h3>
+<p>Now in <code>views/home.handlebars</code> remove the opposite (everything but the body).</p>
+<p>It should look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;main-header&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;black&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;navbar navbar-default&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;container&apos;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;navbar-header&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;button&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;navbar-toggle collapsed&apos;</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">&apos;collapse&apos;</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">&apos;#bs-example-navbar-collapse-1&apos;</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">&apos;false&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;sr-only&apos;</span>&gt;</span>Toggle navigation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;icon-bar&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;icon-bar&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;icon-bar&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;navbar-brand&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;#&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;fa fa-flask&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+          Rick Sanchez
+        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;collapse navbar-collapse&apos;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;bs-example-navbar-collapse-1&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;nav navbar-nav navbar-right&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;/&apos;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;nav-about&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;#&apos;</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          {{#if posts}}
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;nav-writing&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;#&apos;</span>&gt;</span>Writing<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+          {{/if}}
+          <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;nav-contact&apos;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;#&apos;</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;header-text&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;header-title&apos;</span>&gt;</span>Hi, I&apos;m Rick Sanchez.<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;header-subtitle&apos;</span>&gt;</span>Scientist. Time Traveler. Alcoholic.<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">main</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;about-section&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;container&apos;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;section-title&apos;</span>&gt;</span>About Me<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;row about-wrapper&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;col-xs-12 col-sm-3&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&apos;/assets/img/rick.png&apos;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&apos;rick-headshot&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;img-circle headshot&apos;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;col-xs-12 col-sm-9&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;section-content&apos;</span>&gt;</span>
+            Hey there, I&apos;m Rick Sanchez of Earth dimension C-137. Scientist,
+            inventor, engineer, weapons manufacturer, grandfather, part time
+            alcoholic and anything else you are willing to pay for.
+          <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;section-content&apos;</span>&gt;</span>
+            I do most of my work in the garage.
+          <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+  {{#if posts}}
+  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;writing-section&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;container&apos;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;section-title&apos;</span>&gt;</span>My Writing<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;section-content&apos;</span>&gt;</span>
+        {{#each posts}}
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;post-preview&apos;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;post-preview-title&apos;</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+            {{{ ellipsize body }}}
+            <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;/{{ url }}&apos;</span>&gt;</span>Read more &amp;raquo;<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        {{/each}}
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+  {{/if}}
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&apos;contact-section&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;container&apos;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;section-title&apos;</span>&gt;</span>Contact Me<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;row&apos;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;col-xs-12 col-sm-6&apos;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;text&apos;</span> <span class="hljs-attribute">label</span>=<span class="hljs-value">&apos;Name&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;form-control contact-input&apos;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&apos;first&apos;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&apos;First Name *&apos;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;col-xs-12 col-sm-6&apos;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;text&apos;</span> <span class="hljs-attribute">label</span>=<span class="hljs-value">&apos;Name&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;form-control contact-input&apos;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&apos;last&apos;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&apos;Last Name *&apos;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;text&apos;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;form-control contact-input&apos;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&apos;subject&apos;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&apos;Subject *&apos;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;form-control contact-input message&apos;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&apos;message&apos;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&apos;Your Message *&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;btn btn-default contact-submit&apos;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&apos;submit&apos;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&apos;Submit&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">main</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">footer</span>&gt;</span>
+  Made with <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;fa fa-heart&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span> at <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;http://boilercamp.org/&apos;</span>&gt;</span>BoilerCamp 2015<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Note that we also added some curly braces else where too! :D</p>
+</blockquote>
+<h3 id="making-a-post-handlebars">Making a post.handlebars</h3>
+<p>Go ahead and rename and move one of your blog posts to <code>views/post.handlebars</code>.</p>
+<pre><code class="lang-bash">$ mv cross-dimensional-televisions.html views/post.handlebars
+</code></pre>
+<p>Remove everything but the <code>&lt;body&gt;</code>, but then also replace some of the body like
+so:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;blog-nav&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;/&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;fa fa-flask&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    Rick Sanchez
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;blog-post&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&apos;/{{ post.url }}&apos;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;blog-title&apos;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;blog-body&apos;</span>&gt;</span>
+    {{{ post.body }}}
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+</code></pre>
+<h2 id="adding-a-404">Adding a 404</h2>
+<p>With our static site we didn&apos;t handle what would happen if a user tried going to
+a page that doesn&apos;t exist. With our new server we do, but we still need to add
+the view, css, and img for it.</p>
+<h3 id="add-the-view">Add the view</h3>
+<p>Create a file called <code>views/404.handlebars</code>:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;container wrapper-404&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;title-404&apos;</span>&gt;</span>404: The timeline you requested does not exist.<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&apos;img-404&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>Add the necessary CSS to <code>assets/css/style.css</code>:</p>
+<pre><code class="lang-css"><span class="hljs-class">.wrapper-404</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100vh</span></span></span>;
+}</span>
+
+<span class="hljs-class">.title-404</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+}</span>
+
+<span class="hljs-class">.img-404</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(/assets/img/<span class="hljs-number">404</span>.png)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> bottom right</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-repeat</span>:<span class="hljs-value"> no-repeat</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-size</span>:<span class="hljs-value"> contain</span></span>;
+}</span>
+</code></pre>
+<p>And finally, download a funny image for your 404 page, like so:</p>
+<pre><code class="lang-bash">$ wget https://raw.githubusercontent.com/BoilerCamp/how-to-webdev/<span class="hljs-number">85</span>bd3ebbe45c22ede9ecaedf8b43ce23be007902/assets/img/<span class="hljs-number">404</span>.png
+</code></pre>
+<h2 id="done">Done!!</h2>
+<p>Wohoo!</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../docs/node-express/what-is-expressjs.html" class="navigation navigation-prev " aria-label="Previous page: What is Express.js?"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../docs/mongodb-mvc/index.html" class="navigation navigation-next " aria-label="Next page: MongoDB / MVC"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
