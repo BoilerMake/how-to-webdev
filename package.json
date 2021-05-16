@@ -30,7 +30,7 @@
   "dependencies": {
     "bower": "^1.5.3",
     "dotenv": "^1.2.0",
-    "ellipsize": "0.0.2",
+    "ellipsize": "0.1.0",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "mongoose": "^5.7.11"
